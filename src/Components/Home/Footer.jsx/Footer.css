@@ -1,0 +1,390 @@
+.Home-Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:blanchedalmond;
+}
+
+.Home-Footer-Upper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 8rem 0rem 8rem;
+    gap: 1rem;
+}
+
+.Home-Footer-Upper>p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.Home-Footer-Upper-ContentContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) img {
+    width: 50px;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) img:hover {
+    filter: saturate(0.5);
+    cursor: pointer;
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) a:hover::after {
+    width: 100%;
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 :nth-child(2) {
+    display: flex;
+    color: black;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 :nth-child(2) a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+}
+
+.Home-Footer-Upper-ContentContainer-Child1 :nth-child(2):hover a::after {
+    width: 100%;
+}
+
+.Home-Footer-Upper-ContentContainer-Child2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.Home-Footer-Upper-ContentContainer-Child2>p {
+    font-size: 1.3rem;
+    border-right: 1px solid var(--accent);
+    width: min-content;
+    padding: 0rem 2rem 0rem 0rem;
+}
+
+.Home-Footer-Upper-ContentContainer-Child2-Icons-Container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.Social-Icons-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: black;
+}
+
+.Social-Icons-Container p {
+    position: relative;
+
+}
+
+.Social-Icons-Container p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s ease;
+}
+
+.Social-Icons-Container:hover p::after {
+    width: 100%;
+}
+
+/* ..........Footer2....... */
+.Home-Footer-Lower {
+    display: flex;
+    width: 100%;
+    background-color: var(--grey);
+    color: black;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.Home-Footer-Lower p {
+    font-size: 1rem;
+}
+
+.Home-Footer-Upper-ContentContainer-Child2-Icons-Container svg {
+    font-size: 1.3rem;
+}
+
+/* .....media Queries..... */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .Home-Footer-Upper {
+        padding: 2rem 6rem 0rem 6rem;
+    }
+
+    .Home-Footer-Upper>p {
+        font-size: 1.4rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 {
+        font-size: 0.95rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) img {
+        width: 47px;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2>p {
+        font-size: 1.25rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container p {
+        font-size: 0.95rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container svg {
+        font-size: 1.25rem;
+    }
+
+    .Home-Footer-Lower p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Home-Footer-Upper {
+        padding: 2rem 3rem 0rem 3rem;
+    }
+
+    .Home-Footer-Upper>p {
+        font-size: 1.35rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 {
+        font-size: 0.95rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) img {
+        width: 45px;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2>p {
+        font-size: 1.2rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container p {
+        font-size: 0.9rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container svg {
+        font-size: 1.2rem;
+    }
+
+    .Home-Footer-Lower p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .Home-Footer-Upper {
+        padding: 2rem 2rem 0rem 2rem;
+    }
+
+    .Home-Footer-Upper>p {
+        font-size: 1.2rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 {
+        font-size: 0.9rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) img {
+        width: 43px;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2>p {
+        font-size: 1.2rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container p {
+        font-size: 0.85rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container svg {
+        font-size: 1.15rem;
+    }
+
+    .Home-Footer-Lower p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Home-Footer-Upper {
+        padding: 2rem 2rem 0rem 2rem;
+    }
+
+    .Home-Footer-Upper>p {
+        font-size: 1.1rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 {
+        font-size: 0.9rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) img {
+        width: 40px;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2>p {
+        font-size: 1.2rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container p {
+        font-size: 0.8rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container svg {
+        font-size: 1.1rem;
+    }
+
+    .Home-Footer-Lower p {
+        font-size: 0.8rem;
+    }
+
+
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+    .Home-Footer-Upper {
+        padding: 2rem 1rem 0rem 1rem;
+    }
+
+    .Home-Footer-Upper>p {
+        font-size: 1.1rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 {
+        font-size: 0.85rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) img {
+        width: 33px;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2>p {
+        font-size: 1.1rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container p {
+        font-size: 0.8rem;
+        display: none;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container svg {
+        font-size: 1.2rem;
+    }
+
+    .Home-Footer-Lower p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (min-width: 310px) and (max-width: 420px) {
+    .Home-Footer-Upper {
+        padding: 2rem 1rem 0rem 1rem;
+    }
+
+    .Home-Footer-Upper>p {
+        font-size: 1.1rem;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child1 {
+        font-size: 0.85rem;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .Home-Footer-Upper-ContentContainer-Child1 :nth-child(1) img {
+        width: 30px;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2>p {
+        font-size: 1.1rem;
+        display: none;
+    }
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container {
+        justify-content: space-evenly;
+    }
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container p {
+        font-size: 0.8rem;
+        display: none;
+    }
+
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container svg {
+        font-size: 1.2rem;
+        transition: 0.2s;
+    }
+    .Home-Footer-Upper-ContentContainer-Child2-Icons-Container svg:hover{
+     opacity: 0.5;
+    }
+    .Home-Footer-Lower{
+        margin-top: 1.5rem;
+    }
+    .Home-Footer-Lower p {
+        font-size: 0.75rem;
+    }
+}

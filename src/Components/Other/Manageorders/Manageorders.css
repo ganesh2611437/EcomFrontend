@@ -1,0 +1,276 @@
+.Manageorders-Component {
+    min-height: calc(100vh - 60px);
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Manageorders-Container {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.Manageorders-Image-Container {
+    width: 20%;
+    overflow: hidden;
+    height: 200px;
+}
+
+.Manageorders-Image-Container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Manageorders-Details-Container {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 70%;
+}
+
+.Manageorders-Details-Container p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    font-size: 1rem;
+    -webkit-box-orient: vertical;
+}
+
+.Manageorders-Details-Container :nth-child(1) {
+    font-weight: 500;
+}
+
+.Manageorders-Details-Container select {
+    width: 17%;
+    padding: 0.2rem 0rem;
+    background-color: var(--grey);
+    padding: 0.3rem 0.3rem;
+    border: 1px solid black;
+}
+
+.Manageorders-Details-Container select option {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Manageorders-Button-Container {
+    width: 10%;
+}
+
+.Manageorders-Button-Container button {
+    width: 100%;
+    border: none;
+    background-color: var(--accent);
+    color: white;
+    padding: 0.4rem 0rem;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.Manageorders-Button-Container button:hover {
+    background-color: rgba(46, 165, 169, 0.8);
+    cursor: pointer;
+}
+
+/* .....media queries... */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .Manageorders-Component {
+        padding: 2rem 6rem;
+    }
+
+    .Manageorders-Details-Container select {
+        width: 21%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Manageorders-Component {
+        min-height: calc(100vh - 55px);
+        padding: 2rem 3rem;
+    }
+
+    .Manageorders-Details-Container select {
+        width: 24%;
+    }
+
+    .Manageorders-Details-Container p {
+        font-size: 0.95rem;
+    }
+
+    .Manageorders-Image-Container {
+        height: 180px;
+    }
+
+    .Manageorders-Button-Container {
+        width: 15%;
+    }
+
+    .Manageorders-Details-Container {
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+        width: 65%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .Manageorders-Component {
+        min-height: calc(100vh - 50px);
+        padding: 2rem 2rem;
+    }
+
+    .Manageorders-Details-Container select {
+        width: 30%;
+    }
+
+    .Manageorders-Details-Container p {
+        font-size: 0.9rem;
+    }
+
+    .Manageorders-Image-Container {
+        height: 180px;
+    }
+
+    .Manageorders-Button-Container {
+        width: 15%;
+    }
+
+    .Manageorders-Details-Container {
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+        width: 65%;
+    }
+
+    .Manageorders-Details-Container select {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Manageorders-Component {
+        min-height: calc(100vh - 50px);
+        padding: 2rem 2rem;
+    }
+
+    .Manageorders-Container {
+        flex-direction: column;
+    }
+
+    .Manageorders-Image-Container {
+        width: 100%;
+        height: 140px;
+    }
+
+    .Manageorders-Details-Container {
+        width: 100%;
+    }
+
+    .Manageorders-Details-Container select {
+        width: 27%;
+    }
+
+    .Manageorders-Button-Container {
+        width: 100%;
+        padding: 0.5rem 0rem;
+    }
+
+    .Manageorders-Button-Container button {
+        border-radius: 3px;
+    }
+
+    .Manageorders-Details-Container p {
+        -webkit-line-clamp: 20;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+    .Manageorders-Component {
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+        padding: 2rem 1rem;
+    }
+
+    .Manageorders-Container {
+        flex-direction: column;
+    }
+
+    .Manageorders-Image-Container {
+        width: 100%;
+        height: 140px;
+    }
+
+    .Manageorders-Details-Container {
+        width: 100%;
+    }
+
+    .Manageorders-Details-Container select {
+        width: 100%;
+    }
+
+    .Manageorders-Button-Container {
+        width: 100%;
+        padding: 0.5rem 0rem;
+    }
+
+    .Manageorders-Button-Container button {
+        border-radius: 3px;
+    }
+
+    .Manageorders-Details-Container p {
+        -webkit-line-clamp: 20;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 420px) {
+    .Manageorders-Component {
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+        padding: 2rem 1rem;
+    }
+
+    .Manageorders-Container {
+        flex-direction: column;
+    }
+
+    .Manageorders-Image-Container {
+        width: 100%;
+        height: 125px;
+    }
+
+    .Manageorders-Details-Container {
+        width: 100%;
+    }
+
+    .Manageorders-Details-Container select {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .Manageorders-Button-Container {
+        width: 100%;
+        padding: 0.5rem 0rem;
+    }
+
+    .Manageorders-Button-Container button {
+        border-radius: 3px;
+        font-size: 0.75rem;
+    }
+
+    .Manageorders-Details-Container p {
+        -webkit-line-clamp: 20;
+        font-size: 0.8rem;
+    }
+}

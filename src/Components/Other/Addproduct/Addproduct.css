@@ -1,0 +1,354 @@
+.Addproduct-Component {
+    min-height: calc(100vh - 60px);
+    padding: 2rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Addproduct-Component-Container {
+    padding: 2rem;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    background-color: var(--white);
+    gap: 1rem;
+    border-radius: 10px;
+}
+
+.Addproduct-Component-Container::before {
+    content: "Add Product";
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--accent);
+
+}
+
+.Addproduct-Details-Container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.Addproduct-Details-Container p {
+    font-size: 0.9rem;
+}
+
+.Addproduct-Details-Container input {
+    border: none;
+    border-bottom: 1px solid var(--accent);
+    line-height: 35px;
+    font-size: 1rem;
+}
+
+.Addproduct-Details-Container textarea {
+    height: 90px;
+    padding: 0.2rem;
+    font-size: 1rem;
+    resize: none;
+    width: 100%;
+}
+
+.Addproduct-Details-Container select {
+    height: 29px;
+}
+
+.Addproduct-Image-Main-Container {
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px dashed black;
+}
+
+.Addproduct-Image-Container {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Addproduct-Image-Container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Addproduct-Button-Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Addproduct-Button-Container button {
+    width: 100%;
+    padding: 0.5rem 0rem;
+    border: none;
+    font-size: 0.9rem;
+    background-color: var(--accent);
+    color: white;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+
+.Addproduct-Button-Container button:hover {
+    background-color: rgba(46, 165, 169, 0.8);
+    cursor: pointer;
+}
+.Addproduct-Changepassword-Ask{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.Addproduct-Changepassword-Ask p{
+    font-size: 0.9rem;
+}
+.Addproduct-Changepassword-Ask input{
+    width: 13px;
+    height: 13px;
+}
+.Addproduct-Component .Addproduct-Image-Container{
+    width: 80%;
+}
+.Addproduct-Component .Addproduct-Image-Main-Container svg{
+position: absolute;
+transition: 0.2s;
+opacity: 0.6;
+right: 0;
+}
+.Addproduct-Component .Addproduct-Image-Main-Container svg:hover{
+    cursor: pointer;
+    opacity: 0.3;
+}
+/* media queries.. */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .Addproduct-Component {
+        min-height: calc(100vh - 60px);
+        padding: 2rem 6rem;
+    }
+
+    .Addproduct-Component-Container {
+        width: 45%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Addproduct-Component {
+        min-height: calc(100vh - 55px);
+        padding: 2rem 3rem;
+    }
+
+    .Addproduct-Component-Container {
+        width: 50%;
+    }
+
+    .Addproduct-Component-Container::before {
+        font-size: 1.2rem;
+    }
+
+    .Addproduct-Details-Container p {
+        font-size: 0.9rem;
+    }
+
+    .Addproduct-Details-Container textarea {
+        font-size: 0.95rem;
+    }
+
+    .Addproduct-Details-Container input {
+        font-size: 0.95rem;
+    }
+
+    .Addproduct-Button-Container button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .Addproduct-Component {
+        min-height: calc(100vh - 50px);
+        padding: 2rem 2rem;
+    }
+
+    .Addproduct-Component-Container {
+        width: 55%;
+    }
+
+    .Addproduct-Component-Container::before {
+        font-size: 1.15rem;
+    }
+
+    .Addproduct-Details-Container p {
+        font-size: 0.85rem;
+    }
+
+    .Addproduct-Details-Container textarea {
+        font-size: 0.9rem;
+    }
+
+    .Addproduct-Details-Container input {
+        font-size: 0.9rem;
+    }
+
+    .Addproduct-Button-Container button {
+        font-size: 0.85rem;
+    }
+    .Addproduct-Changepassword-Ask p{
+        font-size: 0.85rem;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Addproduct-Component {
+        min-height: calc(100vh - 50px);
+        padding: 2rem 2rem;
+    }
+
+    .Addproduct-Component-Container {
+        width: 65%;
+    }
+
+    .Addproduct-Component-Container::before {
+        font-size: 1.1rem;
+    }
+
+    .Addproduct-Details-Container p {
+        font-size: 0.82rem;
+    }
+
+    .Addproduct-Details-Container textarea {
+        font-size: 0.85rem;
+        height: 80px;
+    }
+
+    .Addproduct-Details-Container input {
+        font-size: 0.85rem;
+    }
+
+    .Addproduct-Button-Container button {
+        font-size: 0.8rem;
+        padding: 0.4rem 0rem;
+    }
+
+    .Addproduct-Image-Main-Container {
+        height: 90px;
+    }
+    .Addproduct-Changepassword-Ask p{
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+    .Addproduct-Component {
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+        padding: 2rem 1rem;
+    }
+
+    .Addproduct-Component-Container {
+        width: 80%;
+    }
+
+    .Addproduct-Component-Container::before {
+        font-size: 1.1rem;
+    }
+
+    .Addproduct-Details-Container p {
+        font-size: 0.8rem;
+    }
+
+    .Addproduct-Details-Container textarea {
+        font-size: 0.82rem;
+        height: 80px;
+    }
+
+    .Addproduct-Details-Container input {
+        font-size: 0.82rem;
+    }
+
+    .Addproduct-Button-Container button {
+        font-size: 0.8rem;
+        padding: 0.4rem 0rem;
+    }
+
+    .Addproduct-Image-Main-Container {
+        height: 90px;
+    }
+
+    .Addproduct-Image-Container {
+        height: 70%;
+    }
+
+    .Addproduct-Details-Container select {
+        font-size: 0.8rem;
+    }
+
+    .Addproduct-Details-Container option {
+        font-size: 0.75rem;
+        
+    }
+    .Addproduct-Changepassword-Ask p{
+        font-size: 0.82rem;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 420px) {
+    .Addproduct-Component {
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+        padding: 2rem 1rem;
+    }
+
+    .Addproduct-Component-Container {
+        width: 100%;
+    }
+
+    .Addproduct-Component-Container::before {
+        font-size: 1.1rem;
+    }
+
+    .Addproduct-Details-Container p {
+        font-size: 0.8rem;
+    }
+
+    .Addproduct-Details-Container textarea {
+        font-size: 0.8rem;
+        height: 80px;
+    }
+
+    .Addproduct-Details-Container input {
+        font-size: 0.8rem;
+    }
+    .Addproduct-Changepassword-Ask p{
+        font-size: 0.8rem;
+    }
+    .Addproduct-Button-Container button {
+        font-size: 0.8rem;
+        padding: 0.4rem 0rem;
+    }
+
+    .Addproduct-Image-Main-Container {
+        height: 90px;
+    }
+
+    .Addproduct-Image-Container {
+        height: 70%;
+    }
+
+    .Addproduct-Details-Container select {
+        font-size: 0.75rem;
+    }
+
+    .Addproduct-Details-Container option {
+        font-size: 0.7rem;
+    }
+    .Addproduct-Changepassword-Ask input{
+        width: 12px;
+        height: 12px;
+    }
+}

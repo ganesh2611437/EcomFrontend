@@ -1,0 +1,279 @@
+.Signup-Component {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    padding: 0rem 8rem;
+    background-color: bisque;
+}
+.Signup-Component form {
+    background-color:rgb(255, 255, 253);
+    height: min-content;
+    padding: 2rem;
+    display: flex;
+    border-radius: 5px;
+    width: 35%;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+}
+
+.Signup-Component form>p {
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.Signup-Component-form-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.Signup-Component-form-group label {
+    font-size: 0.9rem;
+}
+
+.Signup-Component-form-group input {
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+}
+
+.Signup-Component form button {
+    width: 100%;
+    border: none;
+    background-color: var(--accent);
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s;
+    border-radius: 2px;
+    padding: 0.4rem 0rem;
+}
+
+.Signup-Component form button:hover {
+    background-color: rgba(46, 165, 169, 0.8);
+    cursor: pointer;
+}
+
+.Signup-Component-Lowercon {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.Signup-Component-Lowercon :nth-child(2) {
+    color: rgba(45, 122, 216, 1);
+    transition: 0.2s;
+}
+
+.Signup-Component-Lowercon :nth-child(2):hover {
+    color: rgba(45, 122, 216, 0.7);
+}
+
+/* .....media queries..... */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .Signup-Component {
+        padding: 2rem 6rem;
+    }
+
+    .Signup-Component form {
+        width: 40%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Signup-Component {
+        padding: 2rem 3rem;
+    }
+
+    .Signup-Component {
+        min-height: calc(100vh - 55px);
+    }
+
+    .Signup-Component form {
+        width: 45%;
+    }
+
+    .Signup-Component form>p {
+        font-size: 1.4rem;
+    }
+
+    .Signup-Component-form-group label {
+        font-size: 0.85rem;
+    }
+
+    .Signup-Component-form-group input {
+
+        font-size: 0.9rem;
+    }
+
+    .Signup-Component form button {
+        font-size: 0.9rem;
+
+    }
+
+    .Signup-Component-Lowercon {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .Signup-Component {
+        padding: 2rem 2rem;
+    }
+
+    .Signup-Component {
+        min-height: calc(100vh - 50px);
+    }
+
+    .Signup-Component form {
+        width: 50%;
+    }
+
+    .Signup-Component form>p {
+        font-size: 1.3rem;
+    }
+
+    .Signup-Component-form-group label {
+        font-size: 0.83rem;
+    }
+
+    .Signup-Component-form-group input {
+
+        font-size: 0.87rem;
+    }
+
+    .Signup-Component form button {
+        font-size: 0.87rem;
+
+    }
+
+    .Signup-Component-Lowercon {
+        font-size: 0.87rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Signup-Component {
+        padding: 2rem 2rem;
+    }
+
+    .Signup-Component {
+        min-height: calc(100vh - 50px);
+    }
+
+    .Signup-Component form {
+        width: 65%;
+    }
+
+    .Signup-Component form>p {
+        font-size: 1.3rem;
+    }
+
+    .Signup-Component-form-group label {
+        font-size: 0.8rem;
+    }
+
+    .Signup-Component-form-group input {
+
+        font-size: 0.85rem;
+    }
+
+    .Signup-Component form button {
+        font-size: 0.85rem;
+
+    }
+
+    .Signup-Component-Lowercon {
+        font-size: 0.85rem;
+    }
+
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+    .Signup-Component {
+        padding: 2rem 1rem;
+    }
+
+    .Signup-Component {
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+    }
+
+    .Signup-Component form {
+        width: 80%;
+    }
+
+    .Signup-Component form>p {
+        font-size: 1.25rem;
+    }
+
+    .Signup-Component-form-group label {
+        font-size: 0.8rem;
+    }
+
+    .Signup-Component-form-group input {
+
+        font-size: 0.85rem;
+    }
+
+    .Signup-Component form button {
+        font-size: 0.85rem;
+
+    }
+
+    .Signup-Component-Lowercon {
+        font-size: 0.85rem;
+    }
+
+
+}
+
+@media (min-width: 310px) and (max-width: 420px) {
+
+    .Signup-Component {
+        padding: 2rem 1rem;
+    }
+
+    .Signup-Component {
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+    }
+
+    .Signup-Component form {
+        width: 100%;
+    }
+
+    .Signup-Component form>p {
+        font-size: 1.2rem;
+    }
+
+    .Signup-Component-form-group label {
+        font-size: 0.8rem;
+    }
+
+    .Signup-Component-form-group input {
+
+        font-size: 0.8rem;
+    }
+
+    .Signup-Component form button {
+        font-size: 0.8rem;
+        padding: 0.35rem 0rem;
+
+    }
+
+    .Signup-Component-Lowercon {
+        font-size: 0.8rem;
+    }
+}

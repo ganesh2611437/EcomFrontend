@@ -1,0 +1,205 @@
+.Home-Productsshow {
+    min-height: 100vh;
+    
+    padding: 0rem 8rem;
+    display: flex;
+    padding-bottom: 3rem !important;  
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
+.Home-Productsshow-Nav {
+    padding-top: 3rem;
+    width: 100%;
+    
+
+}
+
+.Home-Productsshow-Nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 0.8rem 4rem;
+    border-radius: 30px;
+}
+
+.Home-Productsshow-Nav ul a {
+    text-decoration: none;
+}
+
+.Home-Productsshow-Nav ul li {
+    padding: 0.4rem 1.4rem;
+    border: 2px solid black;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    color: rgb(21, 21, 21);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.Home-Productsshow-Nav ul li:hover {
+    background-color: var(--black);
+    color: rgb(227, 219, 219);
+}
+
+.Home-Productsshow-Nav-Active {
+    color: rgb(19, 17, 17) !important;
+}
+
+/* ..product container css */
+.Home-Productsshow-Products-Container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+/* ......media queries.... */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .Home-Productsshow {
+        padding: 0rem 6rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .Home-Productsshow {
+        padding: 0rem 3rem;
+        gap: 3rem;
+    }
+
+    .Home-Productsshow-Nav ul {
+        padding: 0.6rem 2rem;
+    }
+
+    .Home-Productsshow-Nav ul li {
+        padding: 0.4rem 1.3rem;
+        border: 2px solid black;
+        font-size: 0.8rem;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .Home-Productsshow {
+        padding: 0rem 2rem;
+        gap: 2rem;
+    }
+
+    .Home-Productsshow-Nav ul {
+        padding: 0.6rem 2rem;
+    }
+
+    .Home-Productsshow-Nav ul li {
+        padding: 0.35rem 1.4rem;
+        border: 2px solid black;
+        font-size: 0.75rem;
+        border-radius: 20px;
+    }
+
+    .Home-Productsshow-Products-Container {
+        row-gap: 2rem;
+        column-gap: 1rem;
+        justify-content: space-evenly;
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Home-Productsshow {
+        padding: 0rem 2rem;
+        gap: 2rem;
+    }
+
+    .Home-Productsshow-Nav ul {
+        padding: 0.6rem 1rem;
+    }
+
+    .Home-Productsshow-Nav ul li {
+        padding: 0.3rem 1.4rem;
+        border: 2px solid black;
+        font-size: 0.7rem;
+        border-radius: 20px;
+    }
+
+    .Home-Productsshow-Products-Container {
+        row-gap: 2rem;
+        column-gap: 1rem;
+        justify-content: space-evenly;
+
+    }
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+    .Home-Productsshow {
+        padding: 0rem 1rem;
+        gap: 2rem;
+    }
+
+    .Home-Productsshow-Nav ul {
+        padding: 0.6rem 1rem;
+        row-gap: 0.5rem;
+        column-gap: 1rem;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .Home-Productsshow-Nav ul li {
+        padding: 0.25rem 1rem;
+        border: 2px solid black;
+        font-size: 0.7rem;
+        border-radius: 20px;
+        min-width: 110px;
+        text-align: center;
+    }
+
+    .Home-Productsshow-Products-Container {
+        row-gap: 2rem;
+        column-gap: 1rem;
+        justify-content: space-evenly;
+
+    }
+    .Home-Productsshow-Nav {
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 420px) {
+    .Home-Productsshow {
+        padding: 0rem 1rem;
+        gap: 2rem;
+    }
+
+    .Home-Productsshow-Nav ul {
+        padding: 0.6rem 1rem;
+        row-gap: 0.5rem;
+        column-gap: 1rem;
+        justify-content: space-evenly;
+        border-radius: 10px;
+
+    }
+
+    .Home-Productsshow-Nav ul li {
+        padding: 0.25rem 1rem;
+        border: 2px solid black;
+        font-size: 0.7rem;
+        border-radius: 20px;
+        min-width: 110px;
+        text-align: center;
+    }
+
+    .Home-Productsshow-Products-Container {
+        row-gap: 2rem;
+        column-gap: 0.5rem;
+        justify-content: space-between;
+
+    }
+    .Home-Productsshow-Nav {
+        padding-top: 1rem;
+    }
+}

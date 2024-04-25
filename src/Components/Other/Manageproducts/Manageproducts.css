@@ -1,0 +1,516 @@
+.Manageproducts-Component {
+    min-height: calc(100vh - 60px);
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.Manageproducts-Products-Parent-Container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.Manageproducts-Products-Parent-Container>p {
+    font-size: 2.3rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.3rem 0rem;
+    background-color: var(--white);
+    font-weight: 500;
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 500;
+}
+
+.Manageproducts-Products-Container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+}
+
+.Manageproducts-Product {
+    width: 240px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.Manageproducts-Product-Imagecon {
+    width: 100%;
+    text-align: center;
+    height: 62%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Manageproducts-Product-Imagecon::before {
+    content: "View item";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    opacity: 0;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.Manageproducts-Product-Imagecon:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.Manageproducts-Product-Imagecon img {
+    width: 100%;
+    transition: 0.2s;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Manageproducts-Product-Imagecon:hover img {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.Manageproducts-Product-Detailscon {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Manageproducts-Product-Deletecon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Manageproducts-Product-Deletecon svg {
+    color: red;
+    transition: 0.2s;
+    font-size: 1.1rem;
+}
+
+.Manageproducts-Product-Deletecon svg:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Manageproducts-Product-Detailscon>p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 1rem;
+    -webkit-box-orient: vertical;
+}
+
+.Manageproducts-Product-Detailscon-Buttoncon {
+    width: 100%;
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    border-radius: 3px;
+    padding: 0.3rem 0.1rem;
+    transition: 0.2s;
+}
+
+.Manageproducts-Product-Detailscon-Buttoncon p {
+    color: white;
+}
+
+.Manageproducts-Product-Detailscon-Buttoncon:hover {
+    cursor: pointer;
+    background-color: rgba(46, 165, 169, 0.8);
+}
+
+#Manageproducts-Form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 30%;
+     opacity: 0;
+    z-index: -300; 
+    max-height: 95% !important;
+    overflow: auto;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+
+.Manageproducts-Component .Addproduct-Component-Container::before {
+    content: "Update Product";
+}
+
+.Manageproducts-Form-Active {
+    opacity: 1 !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 300 !important;
+}
+
+#Manageproducts-Form svg {
+    position: absolute;
+    right: 0;
+    transform: translate(-20px, -10px);
+    opacity: 0.5;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+
+#Manageproducts-Form svg:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+.Addproduct-Image-Main-Container svg{
+    transform: translate(-100%, -160%) !important;
+    font-size: 1.1rem !important;
+}
+#Manageproducts-Form .Addproduct-Image-Container{
+    width: 80%;
+}
+.Manageproducts-Deletealert-Container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    transform: scale(0);
+    justify-content: center;
+    opacity: 0;
+    gap: 1rem;
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 1rem;
+    transition: 0.2s;
+    z-index: -100;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.Manageproducts-Deletealert-Container-Active{
+    opacity: 1 !important;
+    z-index: 100 !important; 
+    transform: scale(1) !important;
+}
+.Manageproducts-Deletealert-Container-Buttonscon{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.Manageproducts-Deletealert-Container-Buttonscon button{
+    width: 47%;
+    border: none;
+    padding: 0.4rem 0rem;
+    border-radius: 2px;
+    background:none;
+    transition: 0.2s;
+}
+.Manageproducts-Deletealert-Container-Buttonscon button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.Manageproducts-Deletealert-Container-Buttonscon :nth-child(1){
+    background-color: rgba(251, 51, 51, 1);
+    color: white;
+}
+.Manageproducts-Deletealert-Container-Buttonscon :nth-child(2){
+   background-color: var(--sec);
+    color: white;
+}
+/* ...media queries.. */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .Manageproducts-Component {
+        min-height: calc(100vh - 60px);
+        padding: 2rem 6rem;
+    }
+
+    .Manageproducts-Product {
+        width: 21%;
+        height: 330px;
+    }
+
+    .Manageproducts-Products-Parent-Container>p {
+        font-size: 2.1rem;
+    }
+
+    .Manageproducts-Product-Imagecon::before {
+        font-size: 0.85rem;
+
+    }
+
+    #Manageproducts-Form {
+        width: 35%;
+    }
+    .Manageproducts-Deletealert-Container {
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Manageproducts-Component {
+        min-height: calc(100vh - 55px);
+        padding: 2rem 3rem;
+    }
+
+    .Manageproducts-Product {
+        width: 22%;
+        height: 300px;
+    }
+
+    .Manageproducts-Product p {
+        font-size: 0.95rem;
+    }
+
+    .Manageproducts-Product svg {
+        font-size: 0.95rem;
+    }
+
+    .Manageproducts-Products-Parent-Container>p {
+        font-size: 2rem;
+    }
+
+    .Manageproducts-Product-Imagecon::before {
+        font-size: 0.8rem;
+
+    }
+
+    #Manageproducts-Form {
+        width: 40%;
+    }
+
+    .Manageproducts-Product-Deletecon svg {
+        font-size: 1.1rem;
+    }
+    .Manageproducts-Deletealert-Container {
+        width: 28%;
+    }
+    .Manageproducts-Deletealert-Container{
+        font-size: 0.95rem;
+    }
+    .Manageproducts-Deletealert-Container button{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .Manageproducts-Component {
+        min-height: calc(100vh - 50px);
+        padding: 2rem 2rem;
+    }
+
+    .Manageproducts-Product {
+        width: 28%;
+        height: 300px;
+    }
+
+    .Manageproducts-Product p {
+        font-size: 0.95rem;
+    }
+
+    .Manageproducts-Product svg {
+        font-size: 0.95rem;
+    }
+
+    .Manageproducts-Products-Parent-Container>p {
+        font-size: 1.9rem;
+    }
+
+    .Manageproducts-Product-Imagecon::before {
+        font-size: 0.8rem;
+
+    }
+
+    #Manageproducts-Form {
+        width: 55%;
+    }
+
+    .Manageproducts-Product-Deletecon svg {
+        font-size: 1.1rem;
+    }
+    .Manageproducts-Deletealert-Container {
+        width: 32%;
+    }
+    .Manageproducts-Deletealert-Container{
+        font-size: 0.92rem;
+    }
+    .Manageproducts-Deletealert-Container button{
+        font-size: 0.78rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Manageproducts-Component {
+        min-height: calc(100vh - 50px);
+        padding: 2rem 2rem;
+    }
+
+    .Manageproducts-Product {
+        width: 30%;
+        height: 280px;
+    }
+
+    .Manageproducts-Product p {
+        font-size: 0.95rem;
+    }
+
+    .Manageproducts-Product svg {
+        font-size: 0.95rem;
+    }
+
+    .Manageproducts-Products-Parent-Container>p {
+        font-size: 1.8rem;
+    }
+
+    .Manageproducts-Product-Imagecon::before {
+        font-size: 0.8rem;
+
+    }
+
+    #Manageproducts-Form {
+        width: 65%;
+    }
+
+    .Manageproducts-Product-Deletecon svg {
+        font-size: 1rem;
+    }
+    .Manageproducts-Deletealert-Container {
+        width: 40%;
+    }
+    .Manageproducts-Deletealert-Container{
+        font-size: 0.9rem;
+    }
+    .Manageproducts-Deletealert-Container button{
+        font-size: 0.75rem;
+    }
+    #Manageproducts-Form svg{
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+    .Manageproducts-Component {
+        min-height: calc(100vh - 50px);
+        padding: 2rem 1rem;
+    }
+
+    .Manageproducts-Product {
+        width: 46%;
+        height: 300px;
+    }
+
+    .Manageproducts-Product p {
+        font-size: 0.9rem;
+    }
+
+    .Manageproducts-Product svg {
+        font-size: 0.9rem;
+    }
+
+    .Manageproducts-Products-Parent-Container>p {
+        font-size: 1.7rem;
+    }
+
+    .Manageproducts-Product-Imagecon::before {
+        font-size: 0.75rem;
+
+    }
+
+    #Manageproducts-Form {
+        width: 80%;
+    }
+
+    .Manageproducts-Product-Deletecon svg {
+        font-size: 1.1rem;
+    }
+    .Manageproducts-Deletealert-Container {
+        width: 60%;
+    }
+    .Manageproducts-Deletealert-Container{
+        font-size: 0.85rem;
+    }
+    .Manageproducts-Deletealert-Container button{
+        font-size: 0.7rem;
+        padding: 0.35rem 0rem;
+    }
+    #Manageproducts-Form svg{
+        font-size: 1rem;
+    }
+    .Addproduct-Image-Main-Container svg{
+        transform: translate(-100%, -160%) !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 420px) {
+    .Manageproducts-Component {
+        min-height: calc(100vh - 50px);
+        padding: 2rem 1rem;
+    }
+
+    .Manageproducts-Product {
+        width: 49%;
+        height: 260px;
+    }
+
+    .Manageproducts-Product p {
+        font-size: 0.85rem;
+    }
+
+    .Manageproducts-Product svg {
+        font-size: 0.85rem;
+    }
+
+    .Manageproducts-Products-Parent-Container>p {
+        font-size: 1.5rem;
+    }
+
+    .Manageproducts-Product-Imagecon::before {
+        font-size: 0.7rem;
+
+    }
+
+    #Manageproducts-Form {
+        width: 92%;
+    }
+
+    .Manageproducts-Product-Deletecon svg {
+        font-size: 1rem;
+    }
+
+    .Manageproducts-Products-Container {
+        column-gap: 0.2rem;
+        row-gap: 1rem;
+    }
+    .Manageproducts-Deletealert-Container {
+        width: 75%;
+    }
+    .Manageproducts-Deletealert-Container{
+        font-size: 0.85rem;
+    }
+    .Manageproducts-Deletealert-Container button{
+        font-size: 0.7rem;
+        padding: 0.35rem 0rem;
+    }
+    #Manageproducts-Form svg{
+        font-size: 1rem;
+    }
+    .Addproduct-Image-Main-Container svg{
+        transform: translate(-100%, -160%) !important;
+        font-size: 1rem !important;
+    }
+}

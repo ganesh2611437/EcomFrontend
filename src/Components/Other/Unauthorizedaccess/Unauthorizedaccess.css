@@ -1,0 +1,23 @@
+.UnauthorizedAccess-Component{
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.UnauthorizedAccess-Component p{
+    font-size: 2rem;
+    color: rgb(236, 41, 41);
+  font-weight: 600;
+}
+@media (min-width: 310px) and (max-width: 576px){
+    .UnauthorizedAccess-Component{
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+    }
+    .UnauthorizedAccess-Component p{
+        font-size: 1.5rem;
+        color: rgb(236, 41, 41);
+      font-weight: 600;
+    }
+}

@@ -1,0 +1,110 @@
+.Home-Carousel{
+    display: flex;
+    gap: 1rem;
+    padding: 0rem 8rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    /* min-height: 100vh; */
+ flex-direction: column;
+}
+.Home-Carousel-Head{
+    width: 100%;
+
+}
+.Home-Carousel-Head p{
+    font-size: 2.3rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.3rem 0rem;
+    background-color:rgb(248, 208, 160);
+    font-weight: 500;
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 500;
+}
+.Home-Carousel-Container{
+    width: 100%;
+}
+#Home-Carousel-Owl{
+    width: 100% !important;
+}
+#Home-Carousel-Owl .Product{
+    background-color:blanchedalmond;
+}
+.owl-dots{
+    display: block !important;
+}
+#Home-Carousel-Owl .owl-stage{
+padding: 1rem 0rem;
+}
+/* ....media queries...... */
+@media (min-width: 1201px) and (max-width: 1401px) {
+.Home-Carousel{
+    padding: 0rem 6rem;
+    padding-top: 3rem;
+}
+.Home-Carousel-Head p{
+    font-size: 2.1rem;
+}
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Home-Carousel{
+        padding: 0rem 3rem;
+        padding-top: 3rem;
+    }
+    .Home-Carousel-Head p{
+        font-size: 2rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .Home-Carousel{
+        padding: 0rem 2rem;
+        padding-top: 3rem;
+    }
+    .Home-Carousel-Head p{
+        font-size: 1.9rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .Home-Carousel{
+        padding: 0rem 2rem;
+        padding-top: 3rem;
+    }
+    .Home-Carousel-Head p{
+        font-size: 1.8rem;
+    }
+    #Home-Carousel-Owl .Product {
+        border-radius: 10px;
+    }
+}
+@media (min-width: 420px) and (max-width: 576px) {
+    .Home-Carousel{
+        padding: 0rem 1rem;
+        padding-top: 3rem;
+    }
+    .Home-Carousel-Head p{
+        font-size: 1.5rem;
+    }
+    #Home-Carousel-Owl .Product {
+        width: 81% !important;
+        height: 280px;
+    }
+ 
+}
+@media (min-width: 310px) and (max-width: 420px) {
+    .Home-Carousel{
+        padding: 0rem 1rem;
+        padding-top: 3rem;
+    }
+    .Home-Carousel-Head p{
+        font-size: 1.3rem;
+    }
+    #Home-Carousel-Owl .Product {
+        width: 90% !important;
+        height: 230px;
+        overflow: hidden;
+        padding: 0.8rem;
+        border-radius: 5px;
+    }
+}

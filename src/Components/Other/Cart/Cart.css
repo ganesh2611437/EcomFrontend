@@ -1,0 +1,564 @@
+.Cart-Component {
+    min-height: calc(100vh - 60px);
+    padding: 2rem 8rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Cart-Component-Left-Container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.Cart-Component-Left {
+    display: flex;
+    flex-direction: column;
+    max-height: 50vh;
+    min-height: 50vh;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.Cart-Component-Left-Items {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0rem;
+    height: 110px;
+    border-bottom: 1px solid var(--accent);
+    justify-content: space-between;
+}
+
+.Cart-Component-Left-Above {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.Cart-Component-Left-Above button{
+    background-color: rgb(244, 71, 71);
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border: none;
+    transition: 0.2s;
+    font-size: 0.9rem;
+}
+.Cart-Component-Left-Above button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.Cart-Component-Left-Above p {
+    font-size: 1.2rem;
+}
+
+.Cart-Component-Left-Items-ImageTitleContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    gap: 1rem;
+}
+
+.Cart-Component-Left-Items-ImageTitleContainer p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    width: 70%;
+    -webkit-box-orient: vertical;
+}
+
+.Cart-Component-Left-Items-Image-Container {
+    width: 70px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Cart-Component-Left-Items-Image-Container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Cart-Component-Left-Items-Price-Container {
+    min-width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Cart-Component-Left-Items-Quantity-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 15%;
+    height: 25px;
+    gap: 0.2rem;
+}
+
+.Cart-Component-Left-Items-Quantity-Container button {
+    height: 100%;
+    padding: 0rem 0.4rem;
+    font-size: 1.1rem;
+    color: var(--white);
+    border: none;
+    background-color: var(--accent);
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.Cart-Component-Left-Items-Quantity-Container button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Cart-Component-Left-Items-Quantity-Container input {
+    width: 20%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.Cart-Component-Left-Items-FinalPrice-Container {
+    min-width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Cart-Component-Left-Items-DeleteProduct-Container {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.2s;
+}
+
+.Cart-Component-Left-Items-DeleteProduct-Container:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Cart-Component-Left-Items-DeleteProduct-Container svg {
+    color: rgb(232, 54, 54);
+}
+
+.Cart-Component-Bottom-Price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--main);
+    padding: 1rem 1rem;
+}
+
+.Cart-Component-Bottom-Price p {
+    font-size: 1.2rem;
+}
+
+.Cart-Componene-Bottom-Checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cart-Componene-Bottom-Checkout button {
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: var(--accent);
+    color: white;
+    transition: 0.2s;
+}
+
+.Cart-Componene-Bottom-Checkout button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.Cart-Component-Notfound{
+    width: 100%;
+   padding: 1rem 0rem ;
+    text-align: center;
+    font-size: 1.1rem;
+}
+/* Media Queries*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .Cart-Component {
+        padding: 2rem 6rem;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Cart-Component {
+        padding: 2rem 3rem;
+    }
+    .Cart-Component {
+        min-height: calc(100vh - 55px);
+    }
+    .Cart-Component-Left-Above {
+        padding: 1rem 1rem;
+
+    }
+
+    .Cart-Component-Left-Above p {
+        font-size: 1.15rem;
+    }
+
+    .Cart-Component-Left-Items {
+        height: 105px;
+    }
+
+    .Cart-Component-Left-Items-ImageTitleContainer p {
+        font-size: 0.95rem;
+    }
+
+    .Cart-Component-Left-Items-Image-Container {
+        width: 68px;
+        height: 77px;
+    }
+
+    .Cart-Component-Left-Items-Price-Container p {
+        font-size: 0.95rem;
+    }
+
+    .Cart-Component-Left-Items-FinalPrice-Container p {
+        font-size: 0.95rem;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container button {
+        font-size: 1rem;
+    }
+
+    .Cart-Component-Left-Items-DeleteProduct-Container svg {
+        color: rgb(232, 54, 54);
+        font-size: 1.3rem;
+    }
+
+    .Cart-Component-Bottom-Price {
+        padding: 1rem 1rem;
+    }
+
+    .Cart-Component-Bottom-Price p {
+        font-size: 1.15rem;
+    }
+
+    .Cart-Componene-Bottom-Checkout button {
+        padding: 0.6rem 1.7rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .Cart-Component {
+        padding: 2rem 2rem;
+    }
+    .Cart-Component {
+        min-height: calc(100vh - 50px);
+    }
+    .Cart-Component-Left-Above {
+        padding: 1rem 1rem;
+
+    }
+
+    .Cart-Component-Left-Above p {
+        font-size: 1.1rem;
+    }
+
+    .Cart-Component-Left-Items {
+        height: 100px;
+    }
+
+    .Cart-Component-Left-Items-ImageTitleContainer p {
+        font-size: 0.9rem;
+    }
+
+    .Cart-Component-Left-Items-Image-Container {
+        width: 65px;
+        height: 74px;
+    }
+
+    .Cart-Component-Left-Items-Price-Container p {
+        font-size: 0.9rem;
+    }
+
+    .Cart-Component-Left-Items-FinalPrice-Container p {
+        font-size: 0.9rem;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container {
+        width: 15%;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container input {
+        width: 40%;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container button {
+        font-size: 1rem;
+    }
+
+    .Cart-Component-Left-Items-DeleteProduct-Container svg {
+        color: rgb(232, 54, 54);
+        font-size: 1.25rem;
+    }
+
+    .Cart-Component-Bottom-Price {
+        padding: 1rem 1rem;
+    }
+
+    .Cart-Component-Bottom-Price p {
+        font-size: 1.1rem;
+    }
+
+    .Cart-Componene-Bottom-Checkout button {
+        padding: 0.6rem 1.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Cart-Component {
+        padding: 2rem 2rem;
+    }
+    .Cart-Component {
+        min-height: calc(100vh - 50px);
+    }
+    .Cart-Component-Left-Above {
+        padding: 1rem 1rem;
+
+    }
+    .Cart-Component-Left-Above button{
+     font-size: 0.8rem;
+    }
+    .Cart-Component-Left-Above p {
+        font-size: 1.05rem;
+    }
+
+    .Cart-Component-Left-Items {
+        height: 95px;
+        width: 100vw;
+    }
+
+    .Cart-Component-Left-Items-ImageTitleContainer p {
+        font-size: 0.85rem;
+    }
+
+    .Cart-Component-Left-Items-Image-Container {
+        width: 60px;
+        height: 70px;
+    }
+
+    .Cart-Component-Left-Items-Price-Container p {
+        font-size: 0.85rem;
+    }
+
+    .Cart-Component-Left-Items-FinalPrice-Container p {
+        font-size: 0.85rem;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container {
+        width: 15%;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container input {
+        width: 40%;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container button {
+        font-size: 1rem;
+    }
+
+    .Cart-Component-Left-Items-DeleteProduct-Container svg {
+        color: rgb(232, 54, 54);
+        font-size: 1.2rem;
+    }
+
+    .Cart-Component-Bottom-Price {
+        padding: 1rem 1rem;
+    }
+
+    .Cart-Component-Bottom-Price p {
+        font-size: 1.05rem;
+    }
+
+    .Cart-Componene-Bottom-Checkout button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.85rem;
+    }
+    .Cart-Component-Notfound{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+
+    .Cart-Component {
+        padding: 2rem 1rem;
+    }
+    .Cart-Component {
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+    }
+    .Cart-Component-Left-Above {
+        padding: 0.5rem 1rem;
+
+    }
+    .Cart-Component-Left-Above button{
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+       }
+    .Cart-Component-Left-Above p {
+        font-size: 0.9rem;
+    }
+
+    .Cart-Component-Left-Items {
+        height: 87px;
+        width: 110vw;
+    }
+
+    .Cart-Component-Left-Items-ImageTitleContainer p {
+        font-size: 0.8rem;
+    }
+
+    .Cart-Component-Left-Items-Image-Container {
+        width: 55px;
+        height: 60px;
+    }
+
+    .Cart-Component-Left-Items-Price-Container p {
+        font-size: 0.8rem;
+    }
+
+    .Cart-Component-Left-Items-FinalPrice-Container p {
+        font-size: 0.8rem;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container {
+        width: 15%;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container input {
+        width: 40%;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container button {
+        font-size: 1rem;
+    }
+
+    .Cart-Component-Left-Items-DeleteProduct-Container svg {
+        color: rgb(232, 54, 54);
+        font-size: 1.15rem;
+    }
+
+    .Cart-Component-Bottom-Price {
+        padding: 0.5rem 1rem;
+    }
+
+    .Cart-Component-Bottom-Price p {
+        font-size: 0.9rem;
+    }
+
+    .Cart-Componene-Bottom-Checkout button {
+        padding: 0.6rem 1.8rem;
+        font-size: 0.8rem;
+    }
+
+    .Cart-Component-Left-Items-ImageTitleContainer {
+        width: 35%;
+    }
+    .Cart-Component-Notfound{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 420px) {
+    .Cart-Component {
+        padding: 2rem 1rem;
+    }
+
+    .Cart-Component-Left-Above {
+        padding: 0.5rem 1rem;
+
+    }
+    .Cart-Component-Left-Above button{
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+       }
+    .Cart-Component {
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+    }
+    .Cart-Component-Left-Above p {
+        font-size: 0.85rem;
+    }
+
+    .Cart-Component-Left-Items {
+        height: 83px;
+        width: 130vw;
+    }
+
+    .Cart-Component-Left-Items-ImageTitleContainer p {
+        font-size: 0.75rem;
+    }
+
+    .Cart-Component-Left-Items-Image-Container {
+        width: 50px;
+        height: 58px;
+    }
+
+    .Cart-Component-Left-Items-Price-Container p {
+        font-size: 0.75rem;
+    }
+
+    .Cart-Component-Left-Items-FinalPrice-Container p {
+        font-size: 0.75rem;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container {
+        width: 20%;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container input {
+        width: 30%;
+    }
+
+    .Cart-Component-Left-Items-Quantity-Container button {
+        font-size: 0.9rem;
+    }
+
+    .Cart-Component-Left-Items-DeleteProduct-Container svg {
+        color: rgb(232, 54, 54);
+        font-size: 1.1rem;
+    }
+
+    .Cart-Component-Bottom-Price {
+        padding: 0.5rem 1rem;
+    }
+
+    .Cart-Component-Bottom-Price p {
+        font-size: 0.85rem;
+    }
+
+    .Cart-Componene-Bottom-Checkout button {
+        padding: 0.5rem 1.8rem;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .Cart-Component-Left-Items-ImageTitleContainer {
+        width: 30%;
+    }
+    .Cart-Component-Notfound{
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,320 @@
+.Profilepage-Component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 8rem;
+    min-height: calc(100vh - 60px);
+}
+
+.Profilepage-Container {
+    display: flex;
+    background-color: var(--white);
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    width: 40%;
+    border-radius: 10px;
+    position: relative;
+    flex-direction: column;
+}
+#Profilepage-Role{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-right:1rem;
+    padding: 0.4rem 0.7rem;
+    background: linear-gradient(45deg, #ffc226, #ffffff);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 500;
+    transition: 1s;
+}
+#Profilepage-Role:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.Profilepage-ImageandName-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.Profilepage-Image-Container {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Profilepage-Image-Container:hover {
+    cursor: pointer;
+}
+
+.Profilepage-Image-Container img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+.Profilepage-ImageandName-Container p {
+    font-size: 1.1rem;
+}
+
+.Profilepage-Detailscon {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.Profilepage-Detailscon input {
+    height: 35px;
+    border: none;
+    vertical-align: bottom !important;
+    border-bottom: 1px solid var(--accent);
+}
+.Profilepage-Detailscon :nth-child(4){
+    content: "Not Required";
+}
+.Profilepage-Detailscon p {
+    font-size: 0.9rem;
+}
+
+.Profilepage-Button-Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Profilepage-Button-Container button {
+    width: 100%;
+    padding: 0.4rem 0rem;
+    border: none;
+    background-color: var(--accent);
+    color: white;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+
+.Profilepage-Button-Container button:hover {
+    background-color: rgba(46, 165, 169, 0.8);
+    cursor: pointer;
+}
+.Profilepage-Changepassword-Ask-Detailscon{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.Profilepage-Changepassword-Ask{
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+}
+.Profilepage-Changepassword-Ask p{
+    font-size: 0.9rem;
+}
+.Profilepage-Changepassword-Ask input{
+    width: 13px;
+    height: 13px;
+}
+.Profilepage-Changepassword-Ask svg{
+    font-size: 1.1rem !important;
+    color: rgb(252, 23, 23);
+    transition: 0.2s;
+}
+.Profilepage-Changepassword-Ask svg:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+/* media queries.... */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .Profilepage-Component {
+        padding: 2rem 6rem;
+        min-height: calc(100vh - 60px);
+    }
+   
+    .Profilepage-Container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Profilepage-Component {
+        padding: 2rem 3rem;
+        min-height: calc(100vh - 55px);
+    }
+    .Profilepage-Container {
+        width: 50%;
+    }
+    .Profilepage-ImageandName-Container p {
+        font-size: 1rem;
+    }
+    .Profilepage-Image-Container {
+        width:65px;
+        height: 65px;
+    }
+    .Profilepage-Detailscon p {
+        font-size: 0.85rem;
+    }
+    .Profilepage-Detailscon input {
+      font-size: 0.85rem;
+    }
+    .Profilepage-Changepassword-Ask p{
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .Profilepage-Component {
+        padding: 2rem 2rem;
+        min-height: calc(100vh - 50px);
+    }
+    .Profilepage-Container {
+        width: 55%;
+    }
+    .Profilepage-ImageandName-Container p {
+        font-size: 0.95rem;
+    }
+    .Profilepage-Image-Container {
+  width: 62px;
+        height: 62px;
+    }
+    .Profilepage-Detailscon p {
+        font-size: 0.85rem;
+    }
+    .Profilepage-Detailscon input {
+      font-size: 0.85rem;
+    }
+    .Profilepage-Button-Container button {
+    font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Profilepage-Component {
+        padding: 2rem 2rem;
+        min-height: calc(100vh - 50px);
+    }
+    .Profilepage-Container {
+        width: 65%;
+    }
+    .Profilepage-ImageandName-Container p {
+        font-size: 0.9rem;
+    }
+    .Profilepage-Image-Container {
+    width: 60px;
+        height: 60px;
+    }
+    .Profilepage-Detailscon p {
+        font-size: 0.8rem;
+    }
+    .Profilepage-Detailscon input {
+      font-size: 0.8rem;
+    }
+    .Profilepage-Button-Container button {
+    font-size: 0.8rem;
+    }
+    .Profilepage-Changepassword-Ask p{
+        font-size: 0.80rem;
+    }
+    .Profilepage-Changepassword-Ask svg{
+        font-size: 1rem !important;
+
+    }
+    #Profilepage-Role{
+        font-size: 0.75rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+    .Profilepage-Component {
+        padding: 2rem 1rem;
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+    }
+    .Profilepage-Container {
+        width: 75%;
+    }
+    .Profilepage-ImageandName-Container p {
+        font-size: 0.9rem;
+    }
+    .Profilepage-Image-Container {
+   width: 58px;
+        height: 58px;
+    }
+    .Profilepage-Detailscon p {
+        font-size: 0.8rem;
+    }
+    .Profilepage-Detailscon input {
+      font-size: 0.8rem;
+    }
+    .Profilepage-Button-Container button {
+    font-size: 0.8rem;
+    }
+    .Profilepage-Changepassword-Ask p{
+        font-size: 0.80rem;
+    }
+    .Profilepage-Changepassword-Ask input{
+        width: 13px;
+        height: 13px;
+    }
+    .Profilepage-Changepassword-Ask svg{
+        font-size: 1rem !important;
+    }
+    #Profilepage-Role{
+        font-size: 0.7rem;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 420px) {
+    .Profilepage-Component {
+        padding: 2rem 1rem;
+        min-height: calc(100vh - 50px);
+        min-height: calc(100svh - 50px);
+    }
+    .Profilepage-Container {
+        width: 100%;
+    }
+    .Profilepage-ImageandName-Container p {
+        font-size: 0.9rem;
+    }
+    .Profilepage-Image-Container {
+      
+        width: 55px;
+        height: 55px;
+    }
+    .Profilepage-Detailscon p {
+        font-size: 0.8rem;
+    }
+    .Profilepage-Detailscon input {
+      font-size: 0.8rem;
+    }
+    .Profilepage-Button-Container button {
+    font-size: 0.8rem;
+    }
+    .Profilepage-Changepassword-Ask p{
+        font-size: 0.80rem;
+    }
+    .Profilepage-Changepassword-Ask input{
+        width: 12px;
+        height: 12px;
+    }
+    .Profilepage-Changepassword-Ask svg{
+        font-size: 1rem !important;
+
+    }
+    .Profilepage-Changepassword-Ask-Detailscon{
+        gap: 0.6rem;
+    }
+    #Profilepage-Role{
+        font-size: 0.7rem;
+        margin-right: 0.5rem;
+    }
+}

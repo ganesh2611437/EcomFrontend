@@ -1,0 +1,112 @@
+.Searchproducts {
+    display: flex;
+    height: 100px;
+    min-height: 100px;
+    width: 100%;
+    flex-grow: 1;
+    align-items: center;
+    gap: 1rem;
+    transition: 0.2s;
+    border-bottom: 1px solid var(--accent);
+}
+
+.Searchproducts:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.Searchproducts-Image-Container {
+    height: 80%;
+    min-width: 20%;
+    max-width: 20%;
+    overflow: hidden;
+}
+
+.Searchproducts-Image-Container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Searchproducts-Details-Container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+
+}
+
+.Searchproducts-Details-Container p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.85rem;
+    -webkit-box-orient: vertical;
+}
+/* ...media queries... */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .Searchproducts-Details-Container p {
+        font-size: 0.8rem;
+    }
+    .Searchproducts {
+        min-height: 95px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .Searchproducts-Details-Container p {
+        font-size: 0.8rem;
+    }
+    .Searchproducts {
+        min-height: 93px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .Searchproducts-Details-Container p {
+        font-size: 0.8rem;
+    }
+    .Searchproducts {
+        min-height: 91px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Searchproducts-Details-Container p {
+        font-size: 0.77rem;
+    }
+    .Searchproducts {
+        min-height: 88px;
+    }
+}
+
+
+@media (min-width: 420px) and (max-width: 576px) {
+    .Searchproducts-Details-Container p {
+        font-size: 0.75rem;
+    }
+    .Searchproducts {
+        min-height: 80px;
+    }
+    .Searchproducts-Image-Container {
+        height: 80%;
+    }
+}
+
+
+@media (min-width: 310px) and (max-width: 420px) {
+    .Searchproducts-Details-Container p {
+        font-size: 0.7rem;
+    }
+    .Searchproducts {
+        min-height: 70px;
+    }
+    .Searchproducts-Image-Container {
+        height: 80%;
+    }
+}
